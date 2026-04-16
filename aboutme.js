@@ -12,3 +12,7 @@ const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/
 if (isMobile) {
     $(".section").css("width","90%")
 }
+
+$("#message-link").on("click",function(){
+    window.location.href = "contact-me.html";
+})
