@@ -38,10 +38,9 @@ $("#play-music").on("click",function(){
     playSong();
 })
 
-isMobile = function(){
-    return (window.matchMedia("(any-hover:none)").matches) 
-};
-if (isMobile()) {
+const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+if (isMobile) {
     $("#welcome-message").html('<span style="height:38px; display:block;" class="myName Melody">Melody</span>')
     $("#welcome-message").css("padding-bottom","10px")
     $("#title-text").css("width","100%")

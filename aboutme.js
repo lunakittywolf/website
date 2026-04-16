@@ -8,9 +8,7 @@ playSong();
 changeName();
 setInterval(changeName, 1500)
 
-isMobile = function(){
-    return (window.matchMedia("(any-hover:none)").matches) 
-};
-if (isMobile()) {
+const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+if (isMobile) {
     $(".section").css("width","90%")
 }
