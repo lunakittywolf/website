@@ -61,8 +61,6 @@ body{
     padding-bottom: 3px;
     height: 50px;
     font-family:"Jura";
-    /* Mobile */
-    height: auto;
 }
 
 #title-text{
