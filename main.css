@@ -256,3 +256,15 @@ a#splash-page:link{
     background-color: transparent;
     text-decoration: none;
 }
+
+.fa-check{
+    color:green;
+}
+
+.fa-exclamation{
+    color:yellow;
+}
+
+.fa-x{
+    color: red;
+}
