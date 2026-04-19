@@ -1,5 +1,6 @@
 playSong();
-
+changeName();
+setInterval(changeName, 2000)
 
 
 if(localStorage.getItem("musicVolume")){
@@ -26,5 +27,5 @@ $("#soundVolume-slider").on("change", function(){
 })
 
 $("#testSound").on("click", function(){
-    playSound("TestSound")
+    playSound("Hey")
 })

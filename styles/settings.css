@@ -1,5 +1,6 @@
 #settings{
-    font-family:"Jura";
+    font-family:"Orbitron";
+    text-align:center
 }
 
 .slider-form, #testSound{
@@ -12,4 +13,20 @@
 
 #testSound:hover{
     cursor:pointer;
+}
+
+#song-details{
+    font-family: Architects Daughter;
+    position: absolute;
+    transform: translateY(175px);
+    width: 500px;
+    padding:10px;
+    border:solid;
+    border-radius: 15px;
+    border-color: var(--Color);
+    box-shadow: 0px 0px 5px white;
+}
+
+.slider-form{
+    color: var(--Color);
 }

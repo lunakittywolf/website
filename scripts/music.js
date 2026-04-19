@@ -27,6 +27,11 @@ playSong = async function(){
 }
 
 playSound = function(name){
+    if(!document.getElementById(name)){
+        $("body").append(`<audio id="${name}" src="sounds/${name}.mp3"></audio>`);
+    }else{
+        $(`#${name}`).attr("src",`sounds/${name}.mp3`)
+    }
     sound = document.getElementById(name);
     sound.volume = .25;
     if(localStorage.getItem("soundVolume")){

@@ -1,6 +1,14 @@
 @font-face {
-  font-family: StarLitNight;
-  src: url('../assets/Star.ttf');
+    font-family: StarLitNight;
+    src: url('../assets/Star.ttf');
+}
+@font-face{
+    font-family: RoyalFlush;
+    src: url('../assets/RoyalFlush.ttf')
+}
+@font-face{
+    font-family: CircusAce;
+    src: url('../assets/CircusAce.otf')
 }
 
 :root{
@@ -296,4 +304,14 @@ a#splash-page:link{
 
 .fa-x{
     color: red;
+}
+
+.the-steves{
+    padding-left: 2px;
+    padding-right: 2px;
+    font-family: 'Goldman';
+    text-shadow: -1px 0 red, 0 1px red, 1px 0 red, 0 -1px red;
+}
+.the-steves:hover{
+    cursor:pointer;
 }
