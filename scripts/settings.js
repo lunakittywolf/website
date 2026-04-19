@@ -8,7 +8,7 @@ customPlaySong = async function(){
         setTimeout(function(){
             changeName();
             changeName();
-            setInterval(changeName, 1000)
+            nameChange = setInterval(changeName, 1000)
         },500)
         console.log("Playback started successfully!");
     })
@@ -20,7 +20,7 @@ customPlaySong = async function(){
             setTimeout(function(){
                 changeName();
                 changeName();
-                setInterval(changeName, 1000)
+                nameChange = setInterval(changeName, 1000)
             },500)
             $("#music-popup").css("transform","translateY(-100px)")
             setTimeout($("#music-popup").remove,1000);
@@ -31,6 +31,17 @@ customPlaySong = async function(){
 }
 
 customPlaySong();
+song.addEventListener("ended", function(){
+    clearInterval(nameChange);
+    song.currentTime = 0;
+    song.play().then(() => {
+        setTimeout(function(){
+            setInterval(changeName, 1000)
+        },500)
+        console.log("Playback started successfully!");
+    })
+     console.log("ended");
+});
 
 if(localStorage.getItem("musicVolume")){
     $("#musicVolume-slider").attr("value",localStorage.getItem("musicVolume")*100)
