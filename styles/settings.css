@@ -30,3 +30,27 @@
 .slider-form{
     color: var(--Color);
 }
+
+.rainbow-circle{
+  width: 0px;
+  height: 0px;
+  cursor: pointer;
+  position: relative;
+}
+
+@keyframes radiate {
+  to {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+@keyframes dance {
+    to{
+        transform:rotate(360deg)
+    }
+}
+
+.dancing{
+    animation: dance linear 500ms;
+}
